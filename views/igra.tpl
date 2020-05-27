@@ -5,17 +5,17 @@
 <table>
 <tr>
     <td>
-        <h2>{{igra.pravilni_del_gesla()}}</h2> <br>
+        <h2>{{igra.pravilni_del_gesla()}}</h2> 
     </td>
 </tr>
 <tr>
     <td>
-        Nepravilni ugibi : {{igra.nepravilni_ugibi()}} <br>
+        Nepravilni ugibi : {{igra.nepravilni_ugibi()}} 
     </td>
 </tr>
 <tr>
     <td>
-        <img src="/../img/{{igra.stevilo_napak() - 1}}.jpg" alt="obesanje">
+        <img src="/../img/{{igra.stevilo_napak()}}.jpg" alt="obesanje">
     </td>
 </tr>
 </table>
@@ -41,7 +41,7 @@ Pravilno geslo: {{igra.geslo}}
 % else:
 
 <form action="/igra/" method="post">
-    Crka: <input type='text' name='crka'>
+    Crka: <input type='text' name='crka' autofocus>
     <button type="submit">Poslji ugib</button>
 </form>
 % end
