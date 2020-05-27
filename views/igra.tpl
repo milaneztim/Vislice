@@ -15,7 +15,7 @@
 </tr>
 <tr>
     <td>
-        <img src="../../img/{{igra.stevilo_napak() - 1}}.jpg" alt="obesanje">
+        <img src="/../img/{{igra.stevilo_napak() - 1}}.jpg" alt="obesanje">
     </td>
 </tr>
 </table>
@@ -24,7 +24,7 @@
 
 <h1>ZMAGA</h1>
 
-<form action="/igra/" method="post">
+<form action="/nova_igra/" method="post">
     <button type="submit">Nova igra</button>
 </form>
 
@@ -34,13 +34,13 @@
 
 Pravilno geslo: {{igra.geslo}}
 
-<form action="/igra/" method="post">
+<form action="/nova_igra/" method="post">
     <button type="submit">Nova igra</button>
 </form>
 
 % else:
 
-<form action="/igra/{{id_igre}}/" method="post">
+<form action="/igra/" method="post">
     Crka: <input type='text' name='crka'>
     <button type="submit">Poslji ugib</button>
 </form>
